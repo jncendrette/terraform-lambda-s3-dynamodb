@@ -1,3 +1,5 @@
-*.terraform/
+terraform-modules/.terraform/*
+*.terraform
 terraform.tfstate*
+guia*
 .terraform.lock.hcl
