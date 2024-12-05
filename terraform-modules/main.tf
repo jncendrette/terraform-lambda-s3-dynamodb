@@ -9,3 +9,8 @@ module "s3" {
   env         = local.env
   bucket_name = local.bucket_name
 }
+
+module "vpc" {
+  source = "../vpc-module"
+
+}
