@@ -5,5 +5,5 @@ output "fqdn" {
 
 output "id" {
   value       = module.s3.bucket_domain
-  description = "Bucket Name (aka ID)"
+  description = "Bucket Name Domain"
 }
