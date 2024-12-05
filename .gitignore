@@ -1,4 +1,4 @@
-/terraform-modules/.terraform/*
+/terraform-modules/.terraform/
 terraform.tfstate*
 .terraform.lock.hcl
 .gitignore
