@@ -4,13 +4,13 @@ locals {
 }
 
 module "s3" {
-  source = "../s3-module"
+  source = "./s3-module"
 
   env         = local.env
   bucket_name = local.bucket_name
 }
 
 module "vpc" {
-  source = "../vpc-module"
+  source = "./vpc-module"
 
 }
