@@ -14,3 +14,8 @@ module "vpc" {
   source = "./vpc-module"
 
 }
+
+module "lambda" {
+  source = "./lambda-module"
+
+}
