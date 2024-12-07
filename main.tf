@@ -25,3 +25,8 @@ module "rds" {
   db_password = var.db_password
 
 }
+
+module "sns-sqs" {
+  source = "./sns-sqs-module"
+
+}
