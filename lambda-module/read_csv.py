@@ -3,7 +3,7 @@ import csv
 import pymysql  
 import os
 
-Configurações do banco de dados RDS
+#Configurações do banco de dados RDS
 DB_HOST = os.environ['DB_HOST']
 DB_USER = os.environ['DB_USER']
 DB_PASSWORD = os.environ['DB_PASSWORD']
