@@ -10,12 +10,18 @@ module "s3" {
   bucket_name = local.bucket_name
 }
 
-module "vpc" {
-  source = "./vpc-module"
+# module "vpc" {
+#   source = "./vpc-module"
 
-}
+# }
 
 module "lambda" {
   source = "./lambda-module"
+
+}
+
+module "rds" {
+  source      = "./rds-module"
+  db_password = var.db_password
 
 }
