@@ -73,12 +73,12 @@ resource "aws_db_instance" "adacontabil" {
 
 }
 
-resource "null_resource" "run_sql" {
-  provisioner "local-exec" {
-    command = <<EOT
-      mysqlsh -h ${aws_db_instance.adacontabil.address} -P 3306 -u ada -p ${var.db_password} < init.sql
-    EOT
-  }
+# resource "null_resource" "run_sql" {
+#   provisioner "local-exec" {
+#     command = <<EOT
+#       mysqlsh -h ${aws_db_instance.adacontabil.address} -P 3306 -u ada -p ${var.db_password} < init.sql
+#     EOT
+#   }
 
-  depends_on = [aws_db_instance.adacontabil]
-}
+#   depends_on = [aws_db_instance.adacontabil]
+# }

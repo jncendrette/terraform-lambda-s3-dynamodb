@@ -55,8 +55,8 @@ resource "aws_s3_bucket_notification" "bucket_trigger" {
   lambda_function {
     lambda_function_arn = aws_lambda_function.read_csv.arn
     events              = ["s3:ObjectCreated:*"]
-    filter_prefix       = "input/"
-    filter_suffix       = ".csv"
+    # filter_prefix       = "input/"
+    # filter_suffix       = ".csv"
   }
   depends_on = [aws_lambda_permission.allow_bucket, aws_s3_bucket.data_bucket]
 
