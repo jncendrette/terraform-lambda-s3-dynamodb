@@ -8,7 +8,4 @@ output "id" {
   description = "Bucket Name Domain"
 }
 
-output "rds_hostname" {
-  description = "RDS instance hostname"
-  value       = module.rds.rds_hostname
-}
+

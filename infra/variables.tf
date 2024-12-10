@@ -1,11 +1,11 @@
 variable "bucket_name" {
-  description = "Name of the bucket"
-  type        = string
+  type = string
 }
 
 variable "env" {
   description = "Environment where this module is invoked."
   type        = string
+  default     = "dev"
 }
 
 variable "aws_region" {

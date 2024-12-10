@@ -1,6 +1,6 @@
 # Role IAM para Lambda
 resource "aws_iam_role" "lambda_role" {
-  name = "csv_generator_lambda_role"
+  name = "lambda_role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -34,7 +34,7 @@ resource "aws_iam_role_policy" "lambda_s3_policy" {
           "logs:PutLogEvents"
         ]
         Resource = [
-          "${aws_s3_bucket.data_bucket.arn}/*",
+          "${aws_s3_bucket.default.arn}/*",
           "arn:aws:logs:*:*:*"
         ]
       }
