@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 # Configuração do bucket S3
-BUCKET_NAME = "s3-projetofinal-scaws"
+BUCKET_NAME = "dev"
 REGION_NAME = "us-east-1"
 
 # Inicializa o cliente S3

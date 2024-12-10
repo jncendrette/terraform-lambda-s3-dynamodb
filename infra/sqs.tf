@@ -22,7 +22,7 @@ resource "aws_sqs_queue_policy" "sqs_policy" {
         Resource  = aws_sqs_queue.sqs_adacontabil.arn
         Condition = {
           ArnEquals = {
-            "aws:SourceArn" = aws_sns_topic.sns_projetofinal.arn
+            "aws:SourceArn" = aws_sns_topic.sns_adacontabil.arn
           }
         }
       }
